@@ -7,7 +7,11 @@
 }
 
 .box {
-  padding: 96px 64px;
+  padding: 96px 64px 0 64px;
+  color: white;
+}
+.box-show {
+  padding: 16px 64px;
   color: white;
 }
 
