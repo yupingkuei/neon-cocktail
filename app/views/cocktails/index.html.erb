@@ -1,10 +1,21 @@
-<% @cocktails.each do |cocktail| %>
-  <%= cocktail.name %>
-  <% if cocktail.doses.any? %>
-    <li>
-      <% cocktail.doses.each do |dose| %>
-        <%= dose.ingredient.name %>
-      <% end %>
-    </li>
-  <% end %>
-<% end %>
+<div class="wrapper">
+  <div class="neon-wrapper">
+    <div class="neon-text">NEON COCKTAILS</div>
+  </div>
+</div>
+<div class="background">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <%= cocktail.name %>
+        <% if cocktail.doses.any? %>
+          <li>
+            <% cocktail.doses.each do |dose| %>
+              <%= dose.ingredient.name %>
+            <% end %>
+          </li>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

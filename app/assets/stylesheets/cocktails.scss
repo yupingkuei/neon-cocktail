@@ -1,3 +1,114 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.background {
+  background-color: black;
+    background: radial-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 1)
+        ),
+  url(brick1.jpg);
+  background-position: center;
+  background-size: auto 125%;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 1)
+        ),
+  url(brick1.jpg);
+  background-position: center;
+  background-size: auto 125%;
+}
+@font-face {
+  font-family: 'neon kuei';
+  src: asset_url('NEON____.TTF');
+}
+
+// .neon-wrapper {
+//   box-shadow:
+//   0 0 0.1vw  0.4vw #fff7f7,
+//   0 0 0.4vw  0.6vw #e97272,
+//   0 0   4vw  0.4vw #e50b0b,
+
+//   inset 0 0 1.5vw  0.4vw #e50b0b,
+//   inset 0 0 0.4vw  0.2vw #e97272,
+//   inset 0 0 0.5vw  0.2vw #fff7f7;
+//   border-radius: 1.5rem;
+// }
+.neon-text {
+  font-family: 'neon kuei';
+  font-size: 6rem;
+  color: #ffd8d8;
+  padding: 0 3.5rem 0 3.5rem;
+  text-shadow:
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
+
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757,
+
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
+  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+}
+
+// .neon-text:hover {
+//   font-family: 'neon kuei';
+//   font-size: 6rem;
+//   color: #baffbd;
+//   padding: 0 3.5rem 0 3.5rem;
+//   text-shadow:
+//   .1vw 0vw .25vw #baffbd, .2vw 0vw .25vw #baffbd, .4vw 0vw .25vw #baffbd,
+
+//   .1vw 0vw   0vw #75ff7c, .2vw 0vw   0vw #75ff7c, .4vw 0vw   0vw #75ff7c,
+//   .1vw 0vw  .1vw #75ff7c, .2vw 0vw  .1vw #75ff7c, .4vw 0vw  .1vw #75ff7c,
+//   .1vw 0vw   2vw #75ff7c, .2vw 0vw   2vw #75ff7c, .4vw 0vw   2vw #75ff7c,
+
+//   .1vw 0vw   1vw #0ed600, .2vw 0vw   1vw #0ed600, .4vw 0vw   5vw #0ed600,
+//   .1vw 0vw   5vw #0ed600, .2vw 0vw  20vw #0ed600, .4vw 0vw  10vw #0ed600,
+//   .1vw 0vw  10vw #0ed600, .2vw 0vw  30vw #0ed600, .4vw 0vw  10vw #0ed600;
+// }
+
+// .neon-text:hover {
+//   font-family: 'neon kuei';
+//   font-size: 6rem;
+//   color: #8df8fc;
+//   padding: 0 3.5rem 0 3.5rem;
+//   text-shadow:
+//   .1vw 0vw .25vw #8df8fc, .2vw 0vw .25vw #8df8fc, .4vw 0vw .25vw #8df8fc,
+
+//   .1vw 0vw   0vw #44a3fc, .2vw 0vw   0vw #44a3fc, .4vw 0vw   0vw #44a3fc,
+//   .1vw 0vw  .1vw #44a3fc, .2vw 0vw  .1vw #44a3fc, .4vw 0vw  .1vw #44a3fc,
+//   .1vw 0vw   2vw #44a3fc, .2vw 0vw   2vw #44a3fc, .4vw 0vw   2vw #44a3fc,
+
+//   .1vw 0vw   1vw #0043fc, .2vw 0vw   1vw #0043fc, .4vw 0vw   5vw #0043fc,
+//   .1vw 0vw   5vw #0043fc, .2vw 0vw  20vw #0043fc, .4vw 0vw  10vw #0043fc,
+//   .1vw 0vw  10vw #0043fc, .2vw 0vw  30vw #0043fc, .4vw 0vw  10vw #0043fc;
+// }
+
+.neon-text:hover {
+  font-family: 'neon kuei';
+  font-size: 6rem;
+  color: #fff1a5;
+  padding: 0 3.5rem 0 3.5rem;
+  text-shadow:
+  .1vw 0vw .25vw #fff1a5, .2vw 0vw .25vw #fff1a5, .4vw 0vw .25vw #fff1a5,
+
+  .1vw 0vw   0vw #ffe23f, .2vw 0vw   0vw #ffe23f, .4vw 0vw   0vw #ffe23f,
+  .1vw 0vw  .1vw #ffe23f, .2vw 0vw  .1vw #ffe23f, .4vw 0vw  .1vw #ffe23f,
+  .1vw 0vw   2vw #ffe23f, .2vw 0vw   2vw #ffe23f, .4vw 0vw   2vw #ffe23f,
+
+  .1vw 0vw   1vw #f4c002, .2vw 0vw   1vw #f4c002, .4vw 0vw   5vw #f4c002,
+  .1vw 0vw   5vw #f4c002, .2vw 0vw  20vw #f4c002, .4vw 0vw  10vw #f4c002,
+  .1vw 0vw  10vw #f4c002, .2vw 0vw  30vw #f4c002, .4vw 0vw  10vw #f4c002;
+}
+
+
+

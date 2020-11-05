@@ -1,6 +1,24 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: transparent;
+  position: fixed;
+  min-width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #54a9ff;
+  text-shadow:
+  .1vw 0vw   1vw #0043fc, .2vw 0vw   1vw #0043fc, .4vw 0vw   5vw #0043fc,
+  .1vw 0vw   5vw #0043fc, .2vw 0vw  20vw #0043fc, .4vw 0vw  10vw #0043fc,
+  .1vw 0vw  10vw #0043fc, .2vw 0vw  30vw #0043fc, .4vw 0vw  10vw #0043fc;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffe23f;
+  text-shadow:
+  .1vw 0vw   1vw #f4c002, .2vw 0vw   1vw #f4c002, .4vw 0vw   5vw #f4c002,
+  .1vw 0vw   5vw #f4c002, .2vw 0vw  20vw #f4c002, .4vw 0vw  10vw #f4c002,
+  .1vw 0vw  10vw #f4c002, .2vw 0vw  30vw #f4c002, .4vw 0vw  10vw #f4c002;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +26,5 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 55px;
 }
