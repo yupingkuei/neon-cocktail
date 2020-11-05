@@ -3,6 +3,7 @@
   background: transparent;
   position: fixed;
   min-width: 100%;
+  transition: 0.5s background-color ease;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -27,4 +28,7 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 55px;
+}
+.navbar-lewagon-brown {
+  background-color: #161211;
 }

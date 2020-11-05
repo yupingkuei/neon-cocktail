@@ -4,18 +4,24 @@
   </div>
 </div>
 <div class="background">
-  <div class="cards">
-    <% @cocktails.each do |cocktail| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        <%= cocktail.name %>
-        <% if cocktail.doses.any? %>
-          <li>
-            <% cocktail.doses.each do |dose| %>
-              <%= dose.ingredient.name %>
-            <% end %>
-          </li>
-        <% end %>
-      </div>
-    <% end %>
+  <div class="cards-container">
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          <%= link_to cocktail_path(cocktail) do %>
+            <h2><%= cocktail.name %></h2>
+          <% end %>
+          <% if cocktail.doses.any? %>
+            <ul>
+              <% cocktail.doses.each do |dose| %>
+                <li>
+                  <%= dose.ingredient.name %>
+                </li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

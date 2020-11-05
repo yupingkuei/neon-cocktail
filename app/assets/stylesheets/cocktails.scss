@@ -1,15 +1,22 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.main {
+  background-color: $bg-color;
+  height: 100vh;
+}
+
+.box {
+  padding: 96px 64px;
+  color: white;
+}
+
 .background {
-  background-color: black;
-    background: radial-gradient(
-          rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 1)
-        ),
-  url(brick1.jpg);
-  background-position: center;
-  background-size: auto 125%;
+  background-color: $bg-color;
+}
+
+.cards-container {
+  margin: 0px 32px;
 }
 
 .wrapper {
@@ -109,6 +116,8 @@
   .1vw 0vw   5vw #f4c002, .2vw 0vw  20vw #f4c002, .4vw 0vw  10vw #f4c002,
   .1vw 0vw  10vw #f4c002, .2vw 0vw  30vw #f4c002, .4vw 0vw  10vw #f4c002;
 }
+
+
 
 
 
