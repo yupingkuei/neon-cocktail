@@ -6,13 +6,41 @@
   height: 100vh;
 }
 
-.box {
-  padding: 96px 64px 0 64px;
+.box-add {
+  padding: 80px 64px 0 64px;
   color: white;
+  h1 {
+    text-align: center;
+    color: #f25757;
+    text-shadow:
+    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
+    .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+    .1vw 0vw  3vw #e50b0b, .2vw 0vw  3vw #e50b0b, .4vw 0vw  3vw #e50b0b;
+  }
+
+}
+
+.box {
+  padding: 80px 64px 0 64px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    text-align: center;
+    color: #f25757;
+    text-shadow:
+    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
+    .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+    .1vw 0vw  3vw #e50b0b, .2vw 0vw  3vw #e50b0b, .4vw 0vw  3vw #e50b0b;
+  }
 }
 .box-show {
-  padding: 16px 64px;
+  padding: 56px 0px;
   color: white;
+}
+
+.dose {
+  width: 685px;
 }
 
 .background {

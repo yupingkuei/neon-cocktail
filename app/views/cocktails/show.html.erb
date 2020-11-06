@@ -1,19 +1,29 @@
 <div class="box">
-  <h1><%= @cocktail.name %></h1>
-  <% @cocktail.doses.each do |dose| %>
-    <li>
-      <%= dose.ingredient.name %> - <%= dose.description %>
-      <%= link_to dose_path(dose), method: :delete, data: { comfirm: 'Are you sure?'} do %>
-        <i class="fas fa-trash-alt"></i>
+  <div class="cocktail">
+    <h1><%= @cocktail.name %></h1>
+    <% if @cocktail.photo.attached? %>
+      <div class="card-category-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 600, width: 500, crop: :fill %>')"></div>
+    <% else %>
+      <div class="card-category-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)"></div>
+    <% end %>
+  </div>
+  <div class="dose">
+    <div class="box-show">
+      <% @cocktail.doses.each do |dose| %>
+        <li>
+          <%= dose.ingredient.name %> - <%= dose.description %>
+          <%= link_to dose_path(dose), method: :delete, data: { comfirm: 'Are you sure?'} do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </li>
       <% end %>
-    </li>
-  <% end %>
-</div>
-<div class="box-show">
-  <h1>Add Dose</h1>
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.submit %>
-  <% end %>
+      <br>
+      <h4>Add Dose</h4>
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
 </div>
