@@ -1,11 +1,11 @@
 <div class="box-add">
   <div class="row">
     <div class="col-4 mx-auto">
-      <h1>Add Cocktail</h1>
+      <h1>Add a Cocktail</h1>
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
         <%= f.input :photo, as: :file %>
-        <%= f.submit %>
+        <%= f.submit 'Add this cocktail', class: 'neon-btn' %>
       <% end %>
     </div>
   </div>

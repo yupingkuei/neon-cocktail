@@ -18,11 +18,11 @@
         </li>
       <% end %>
       <br>
-      <h4>Add Dose</h4>
+      <h4>Add a Dose</h4>
       <%= simple_form_for [@cocktail, @dose] do |f| %>
         <%= f.input :description %>
         <%= f.association :ingredient %>
-        <%= f.submit %>
+        <%= f.submit 'Add this dose', class: 'neon-btn' %>
       <% end %>
     </div>
   </div>
