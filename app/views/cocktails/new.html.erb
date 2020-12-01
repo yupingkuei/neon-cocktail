@@ -1,8 +1,12 @@
 <div class="box-add">
-  <h1>Add Cocktail</h1>
-  <%= simple_form_for @cocktail do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit %>
-  <% end %>
+  <div class="row">
+    <div class="col-4 mx-auto">
+      <h1>Add Cocktail</h1>
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
 </div>
